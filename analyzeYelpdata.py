@@ -171,6 +171,7 @@ if __name__ == "__main__":
    mean=analyzedb.review_count()
    result=analyzedb.mean_and_error(analyzedb, mean,'review')
    #print json.dumps(result,indent=4,sort_keys=True)
+   # use end='end' if want to include till the last feature
    analyzedb.plot_barchart(result,start=7,end='end',case='review')
    
 
@@ -178,5 +179,6 @@ if __name__ == "__main__":
    mean=analyzedb.checkin_count()   
    result=analyzedb.mean_and_error(analyzedb, mean,'checkin')
    #print json.dumps(result,indent=4,sort_keys=True)
+   # use end='end' if want to include till the last feature
    analyzedb.plot_barchart(result,start=0,end=7,case='checkin')
    """
