@@ -100,7 +100,8 @@ class Analyzeyelpdata:
               result[category][weekday]=(mean[category][weekday], ((max-1.0)/max*result[category][weekday])**0.5)              
               #print category,weekday,result[category][weekday][0],result[category][weekday][1]
        return result
-
+   
+   # this method generate plot showing the histogram and the error for review and checkin
    def plot_barchart(self, result,start = 0,end = 7,case='review'):
       import numpy as np
       import matplotlib.pyplot as plt
