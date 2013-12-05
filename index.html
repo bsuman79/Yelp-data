@@ -28,11 +28,11 @@ body {
       8,282 checkins, 43,873 users and 229,907 reviews. The goal of this
       post is to use this data and study the day of week that people
       post reviews. Are some days preferred than the others or all
-      days are equally likely? If there is a preffered day when most
+      days are equally likely? If there is a preferred day when most
       reviews are posted, how statistically significant that finding
       is? Does the preferred day changes with the categories and is
       this statistically significant? In the second part of the post
-      I ask the same questions with the checkins ie, is there a
+      I ask the same questions with the checkins i.e., is there a
       preferred day for checkins, its statistical significance, and
       correlation with categories.<br>
 
@@ -45,10 +45,10 @@ body {
       counts. The count is normalized with respect to the total number
       of reviews (or checkins for the second part) and multiplied by
       100 to express the fraction in percent. The standard deviation
-      is calculated using the jacknife sampling method. <br>
+      is calculated using the jackknife sampling method. <br>
 	
-	<h1> Jacknife Sampling Error Estimates</h1>
-	The Jacknife method is a way to estimate the standard
+	<h1> Jackknife Sampling Error Estimates</h1>
+	The Jackknife method is a way to estimate the standard
       deviation error of the mean of a sample.
 	First, the review data is divided into M=8 blocks. For each
       block, we exclude that block from the total data, then estimate
@@ -85,8 +85,8 @@ body {
        Monday, followed by Tuesday and Wednesday. Less 
        reviews are posted on Friday and Saturday. The error on the
        estimates are small owing to the large size of the review dataset such that
-       Monday is more popular than Wednesday by atleast 3
-       standard deviation. The dasdhed line shows the case if all days in
+       Monday is more popular than Wednesday by at least 3
+       standard deviation. The dashed line shows the case if all days in
        a week would equal share of reviews posted. A measure of the
        significance of a day is to ask how much more significant that
        day compared to the "equally likely"
@@ -94,7 +94,7 @@ body {
        more than 4 standard deviation higher than the equally likely
        case.<br>
        The figure also shows the definite trend with 14
-       different categories. E.g., 'Automotive', 'Food', 'Home Serivices',
+       different categories. E.g., 'Automotive', 'Food', 'Home Services',
        'Local Services' and 'Pets' categories show that Wednesday (not
         Monday) is
        the most popular day to post reviews. Compared to the "equally
@@ -105,10 +105,10 @@ body {
 
       <img width="800" height="400" src="review.png" />
       <img width="800" height="400" src="review1.png" />
-     <h1> Results: Checkins</h1><p align="justify">
+     <h1> Results: Checkins</h1><p align="left">
     With the checkins dataset, one can ask the same question, namely what is
     the most popular day for checkins and how it varies with different
-    categories. The size of the checkins data is atleast factor 30
+    categories. The size of the checkins data is at least factor 30
     smaller than the review data and hence most of the results from
     the checkins data is not statistically significant. However,
     the figure below (two panels) shows that Saturday and Friday are the
@@ -127,13 +127,9 @@ body {
     next popular day- Wednesday. There is also some interesting
     variation to be seen with category, most of which are
     statistically significant. On the other hand, people typically
-    like to checkin on Saturday. Although, becasue of the small
-    checkin data, no trend in the ckeckin data is statistically significant. 
+    like to checkin on Saturday. Although, because of the small size of 
+    checkin data, no trend in the checkin data is statistically significant.
 	  </p>
 	   </font></div></div></div>
-
-
-
-
 
 </body>
